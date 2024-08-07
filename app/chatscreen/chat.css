@@ -1,0 +1,32 @@
+
+
+@media screen and (min-width:1910px) {
+    .crossbtn{
+        left: 30vw;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+
+
+.chatbotscreen::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+.chatbotscreen::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.chatbotscreen::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
+
+.container-2 .insidecontainer:hover{
+    color:#00d0ff !important;
+  }

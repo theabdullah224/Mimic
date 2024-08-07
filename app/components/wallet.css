@@ -1,0 +1,113 @@
+.wallet {
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .wallet.connected {
+    cursor: pointer;
+  }
+  
+  .wallet.expanded {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .dropdown {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .wallet.expanded .dropdown {
+    opacity: 1;
+    max-height: 200px; /* Adjust this value as needed */
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown a:hover {
+    color: #00D0FF;
+  }
+@media screen and (max-width:450px) {
+    .wallet {
+        padding: 7px 10px;
+    }
+    .h3wallet {
+        font-size: .7rem;
+    }
+    .walletsvg {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+}
+
+
+
+.wallet:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 0px transparent);
+  -webkit-filter: drop-shadow(0px 0px transparent);
+  position: relative;
+  top: 11px;
+  left: 11px;
+  
+  /* background-color: #00D0FF; */
+  color: #00D0FF !important;
+  .insidewallet{
+  color: #00D0FF !important;
+  
+}
+.walletsvg {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(1312%) hue-rotate(155deg) brightness(106%) contrast(101%);
+  -webkit-filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(1312%) hue-rotate(155deg) brightness(106%) contrast(101%);
+}
+
+}
+.wallet:hover:hover::before  {
+  background-color: #00D0FF;
+ 
+}
+@media screen and (max-width:450px) {
+  .wallet{
+      padding: 0;
+      padding: 7px 10px;
+  }
+  .h3wallet{
+      font-size: .7rem;
+
+  }
+  .walletsvg{
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+  }
+  
+}
+.wallet-wrapper {
+  position: relative;
+}
+
+.wallet {
+  /* Keep existing styles */
+}
+
+.insidewallet {
+  /* Keep existing styles */
+}
+
+.wallet-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #040923; /* Match your custom blue color */
+  border: 1px solid #352969; /* Match your border color */
+}
